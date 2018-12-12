@@ -40,6 +40,7 @@ namespace SharpTinder
         [JsonProperty("create_date")]
         public DateTime CreateDate { get; set; }
 
+        [JsonConverter(typeof(MsOrDTSConverter))]
         [JsonProperty("active_time")]
         public DateTime ActiveTime { get; set; }
 
